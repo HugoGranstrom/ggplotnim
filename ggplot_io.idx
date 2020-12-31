@@ -1,0 +1,4 @@
+readCsv	ggplot_io.html#readCsv,Stream,char,string,int,seq[string],string	ggplot_io: readCsv(s: Stream; sep = &apos;,&apos;; header = &quot;&quot;; skipLines = 0;\n        colNames: seq[string] = @[]; fname = &quot;&lt;unknown&gt;&quot;): OrderedTable[string,\n    seq[string]]	
+readCsvTyped	ggplot_io.html#readCsvTyped,string,char,string,int,set[char]	ggplot_io: readCsvTyped(fname: string; sep: char = &apos;,&apos;; header: string = &quot;&quot;; skipLines = 0;\n             toSkip: set[char] = {}): DataFrame	
+readCsv	ggplot_io.html#readCsv,string,char,string,int,seq[string]	ggplot_io: readCsv(fname: string; sep = &apos;,&apos;; header = &quot;&quot;; skipLines = 0;\n        colNames: seq[string] = @[]): OrderedTable[string, seq[string]]	
+writeCsv	ggplot_io.html#writeCsv,DataFrame,string,char,string,int	ggplot_io: writeCsv(df: DataFrame; filename: string; sep = &apos;,&apos;; header = &quot;&quot;; precision = 4)	

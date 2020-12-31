@@ -1,0 +1,8 @@
+FormulaName	formulaNameMacro.html#FormulaName	formulaNameMacro: FormulaName	
+initTerm	formulaNameMacro.html#initTerm,FormulaName,FormulaName,string	formulaNameMacro: initTerm(lhs: FormulaName; rhs: FormulaName; op: string): FormulaName	
+initVariable	formulaNameMacro.html#initVariable,T	formulaNameMacro: initVariable[T: Value | string](val: T): FormulaName	
+toUgly	formulaNameMacro.html#toUgly,string,FormulaName	formulaNameMacro: toUgly(result: var string; node: FormulaName)	
+`$`	formulaNameMacro.html#$,FormulaName	formulaNameMacro: `$`(node: FormulaName): string	
+constructVariable	formulaNameMacro.html#constructVariable,NimNode,staticbool	formulaNameMacro: constructVariable(n: NimNode; identIsVar: static bool = true): NimNode	
+constructFunction	formulaNameMacro.html#constructFunction,NimNode	formulaNameMacro: constructFunction(n: NimNode): NimNode	
+buildFormula	formulaNameMacro.html#buildFormula,NimNode	formulaNameMacro: buildFormula(n: NimNode): NimNode	

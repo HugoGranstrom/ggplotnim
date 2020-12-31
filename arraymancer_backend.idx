@@ -1,0 +1,91 @@
+fkVariable	arraymancer_backend.html#fkVariable	FormulaKind.fkVariable	
+fkAssign	arraymancer_backend.html#fkAssign	FormulaKind.fkAssign	
+fkVector	arraymancer_backend.html#fkVector	FormulaKind.fkVector	
+fkScalar	arraymancer_backend.html#fkScalar	FormulaKind.fkScalar	
+FormulaKind	arraymancer_backend.html#FormulaKind	arraymancer_backend: FormulaKind	
+FormulaNode	arraymancer_backend.html#FormulaNode	arraymancer_backend: FormulaNode	
+DataFrame	arraymancer_backend.html#DataFrame	arraymancer_backend: DataFrame	
+ValueNull	arraymancer_backend.html#ValueNull	arraymancer_backend: ValueNull	
+newDataFrame	arraymancer_backend.html#newDataFrame,int	arraymancer_backend: newDataFrame(size = 8; kind = dfNormal): DataFrame	
+ncols	arraymancer_backend.html#ncols.t,DataFrame	arraymancer_backend: ncols(df: DataFrame): int	
+high	arraymancer_backend.html#high,DataFrame	arraymancer_backend: high(df: DataFrame): int	
+keys	arraymancer_backend.html#keys.i,DataFrame	arraymancer_backend: keys(df: DataFrame): string	
+getKeys	arraymancer_backend.html#getKeys,OrderedTable[string,T]	arraymancer_backend: getKeys[T](tab: OrderedTable[string, T]): seq[string]	
+getKeys	arraymancer_backend.html#getKeys,DataFrame	arraymancer_backend: getKeys(df: DataFrame): seq[string]	
+raw	arraymancer_backend.html#raw,FormulaNode	arraymancer_backend: raw(node: FormulaNode): string	
+toUgly	arraymancer_backend.html#toUgly,string,FormulaNode	arraymancer_backend: toUgly(result: var string; node: FormulaNode)	
+`$`	arraymancer_backend.html#$,FormulaNode	arraymancer_backend: `$`(node: FormulaNode): string	
+len	arraymancer_backend.html#len,Tensor[T]	arraymancer_backend: len[T](t: Tensor[T]): int	
+drop	arraymancer_backend.html#drop,DataFrame,string	arraymancer_backend: drop(df: var DataFrame; key: string)	
+contains	arraymancer_backend.html#contains,DataFrame,string	arraymancer_backend: contains(df: DataFrame; key: string): bool	
+`[]`	arraymancer_backend.html#[],DataFrame,string	arraymancer_backend: `[]`(df: DataFrame; k: string): var Column	
+`[]`	arraymancer_backend.html#[],DataFrame,Value	arraymancer_backend: `[]`(df: DataFrame; k: Value): Column	
+isColumn	arraymancer_backend.html#isColumn,FormulaNode,DataFrame	arraymancer_backend: isColumn(fn: FormulaNode; df: DataFrame): bool	
+isConstant	arraymancer_backend.html#isConstant,FormulaNode,DataFrame	arraymancer_backend: isConstant(fn: FormulaNode; df: DataFrame): bool	
+`[]`	arraymancer_backend.html#[],DataFrame,string,int	arraymancer_backend: `[]`(df: DataFrame; k: string; idx: int): Value	
+`[]`	arraymancer_backend.html#[],DataFrame,string,int,typedesc[T]	arraymancer_backend: `[]`[T](df: DataFrame; k: string; idx: int; dtype: typedesc[T]): T	
+`[]`	arraymancer_backend.html#[],DataFrame,string,Slice[int],typedesc[T]	arraymancer_backend: `[]`[T](df: DataFrame; k: string; slice: Slice[int]; dtype: typedesc[T]): Tensor[\n    T]	
+`[]`	arraymancer_backend.html#[],DataFrame,string,Slice[int]	arraymancer_backend: `[]`(df: DataFrame; k: string; slice: Slice[int]): Column	
+`[]`	arraymancer_backend.html#[],DataFrame,string,typedesc[T]	arraymancer_backend: `[]`[T](df: DataFrame; key: string; dtype: typedesc[T]): Tensor[T]	
+`[]=`	arraymancer_backend.html#[]=,DataFrame,string,Column	arraymancer_backend: `[]=`(df: var DataFrame; k: string; col: Column)	
+asgn	arraymancer_backend.html#asgn,DataFrame,string,Column	arraymancer_backend: asgn(df: var DataFrame; k: string; col: Column)	
+clone	arraymancer_backend.html#clone,DataFrame	arraymancer_backend: clone(df: DataFrame): DataFrame	
+withCombinedType	arraymancer_backend.html#withCombinedType.t,DataFrame,untyped	arraymancer_backend: withCombinedType(df: DataFrame; body: untyped): untyped	
+`[]=`	arraymancer_backend.html#[]=,DataFrame,string,T	arraymancer_backend: `[]=`[T: Tensor | seq | array](df: var DataFrame; k: string; t: T)	
+`[]=`	arraymancer_backend.html#[]=,DataFrame,string,int,T	arraymancer_backend: `[]=`[T](df: var DataFrame; k: string; idx: int; val: T)	
+`[]=`	arraymancer_backend.html#[]=,DataFrame,FormulaNode,string,T	arraymancer_backend: `[]=`[T](df: var DataFrame; fn: FormulaNode; key: string; val: T)	
+add	arraymancer_backend.html#add,DataFrame,T	arraymancer_backend: add[T: tuple](df: var DataFrame; args: T)	
+add	arraymancer_backend.html#add.t,DataFrame,varargs[untyped]	arraymancer_backend: add(df: var DataFrame; args: varargs[untyped]): untyped	
+`[]`	arraymancer_backend.html#[],DataFrame,HSlice[T,U]	arraymancer_backend: `[]`[T, U](df: DataFrame; rowSlice: HSlice[T, U]): DataFrame	
+row	arraymancer_backend.html#row,DataFrame,int,varargs[string]	arraymancer_backend: row(df: DataFrame; idx: int; cols: varargs[string]): Value	
+pretty	arraymancer_backend.html#pretty,DataFrame,int,int	arraymancer_backend: pretty(df: DataFrame; numLines = 20; precision = 4; header = true): string	
+`$`	arraymancer_backend.html#$.t,DataFrame	arraymancer_backend: `$`(df: DataFrame): string	
+extendShortColumns	arraymancer_backend.html#extendShortColumns,DataFrame	arraymancer_backend: extendShortColumns(df: var DataFrame)	
+toDf	arraymancer_backend.html#toDf,OrderedTable[string,seq[string]]	arraymancer_backend: toDf(t: OrderedTable[string, seq[string]]): DataFrame	
+toDf	arraymancer_backend.html#toDf,OrderedTable[string,seq[Value]]	arraymancer_backend: toDf(t: OrderedTable[string, seq[Value]]): DataFrame	
+toTab	arraymancer_backend.html#toTab.m,varargs[untyped]	arraymancer_backend: toTab(args: varargs[untyped]): untyped	
+seqsToDf	arraymancer_backend.html#seqsToDf.t,varargs[untyped]	arraymancer_backend: seqsToDf(s: varargs[untyped]): untyped	
+colsToDf	arraymancer_backend.html#colsToDf.t,varargs[untyped]	arraymancer_backend: colsToDf(s: varargs[untyped]): untyped	
+dataFrame	arraymancer_backend.html#dataFrame.t,varargs[untyped]	arraymancer_backend: dataFrame(s: varargs[untyped]): untyped	
+toDf	arraymancer_backend.html#toDf.t,varargs[untyped]	arraymancer_backend: toDf(s: varargs[untyped]): untyped	
+items	arraymancer_backend.html#items.i,DataFrame	arraymancer_backend: items(df: DataFrame): Value	
+values	arraymancer_backend.html#values.i,DataFrame,varargs[string]	arraymancer_backend: values(df: DataFrame; cols: varargs[string]): Tensor[Value]	
+get	arraymancer_backend.html#get,DataFrame,string	arraymancer_backend: get(df: DataFrame; key: string): Column	
+colMax	arraymancer_backend.html#colMax,DataFrame,string	arraymancer_backend: colMax(df: DataFrame; col: string; ignoreInf = true): float	
+colMin	arraymancer_backend.html#colMin,DataFrame,string	arraymancer_backend: colMin(df: DataFrame; col: string; ignoreInf = true): float	
+scaleFromData	arraymancer_backend.html#scaleFromData,Column,staticbool	arraymancer_backend: scaleFromData(c: Column; ignoreInf: static bool = true): ginger.Scale	
+compileFormulaImpl	arraymancer_backend.html#compileFormulaImpl.m,untyped,untyped,untyped,untyped,untyped,untyped,untyped,varargs[typed]	arraymancer_backend: compileFormulaImpl(rawName, name, body: untyped; bools: untyped; dtype: untyped;\n                   resDtype: untyped; funcKind: untyped;\n                   typedCalls: varargs[typed]): untyped	
+`{}`	arraymancer_backend.html#{}.m,,untyped	arraymancer_backend: `{}`(x: untyped{ident}; y: untyped): untyped	
+fn	arraymancer_backend.html#fn.m,untyped	arraymancer_backend: fn(x: untyped): untyped	
+bind_rows	arraymancer_backend.html#bind_rows,varargs[],string	arraymancer_backend: bind_rows(dfs: varargs[(string, DataFrame)]; id: string = &quot;&quot;): DataFrame	
+bind_rows	arraymancer_backend.html#bind_rows.t,varargs[DataFrame],string	arraymancer_backend: bind_rows(dfs: varargs[DataFrame]; id: string = &quot;&quot;): DataFrame	
+add	arraymancer_backend.html#add,DataFrame,DataFrame	arraymancer_backend: add(df: var DataFrame; dfToAdd: DataFrame)	
+groups	arraymancer_backend.html#groups.i,DataFrame	arraymancer_backend: groups(df: DataFrame; order = SortOrder.Ascending): (seq[(string, Value)],\n    DataFrame)	
+filter	arraymancer_backend.html#filter,DataFrame,varargs[FormulaNode]	arraymancer_backend: filter(df: DataFrame; conds: varargs[FormulaNode]): DataFrame	
+calcNewColumn	arraymancer_backend.html#calcNewColumn,DataFrame,FormulaNode	arraymancer_backend: calcNewColumn(df: DataFrame; fn: FormulaNode): (string, Column)	
+calcNewConstColumnFromScalar	arraymancer_backend.html#calcNewConstColumnFromScalar,DataFrame,FormulaNode	arraymancer_backend: calcNewConstColumnFromScalar(df: DataFrame; fn: FormulaNode): (string, Column)	
+selectInplace	arraymancer_backend.html#selectInplace,DataFrame,varargs[T]	arraymancer_backend: selectInplace[T: string | FormulaNode](df: var DataFrame; cols: varargs[T])	
+select	arraymancer_backend.html#select,DataFrame,varargs[T]	arraymancer_backend: select[T: string | FormulaNode](df: DataFrame; cols: varargs[T]): DataFrame	
+mutateInplace	arraymancer_backend.html#mutateInplace,DataFrame,varargs[FormulaNode]	arraymancer_backend: mutateInplace(df: var DataFrame; fns: varargs[FormulaNode])	
+mutate	arraymancer_backend.html#mutate,DataFrame,varargs[FormulaNode]	arraymancer_backend: mutate(df: DataFrame; fns: varargs[FormulaNode]): DataFrame	
+transmuteInplace	arraymancer_backend.html#transmuteInplace,DataFrame,varargs[FormulaNode]	arraymancer_backend: transmuteInplace(df: var DataFrame; fns: varargs[FormulaNode])	
+transmute	arraymancer_backend.html#transmute,DataFrame,varargs[FormulaNode]	arraymancer_backend: transmute(df: DataFrame; fns: varargs[FormulaNode]): DataFrame	
+rename	arraymancer_backend.html#rename,DataFrame,varargs[FormulaNode]	arraymancer_backend: rename(df: DataFrame; cols: varargs[FormulaNode]): DataFrame	
+arrange	arraymancer_backend.html#arrange,DataFrame,seq[string]	arraymancer_backend: arrange(df: DataFrame; by: seq[string]; order = SortOrder.Ascending): DataFrame	
+arrange	arraymancer_backend.html#arrange,DataFrame,string	arraymancer_backend: arrange(df: DataFrame; by: string; order = SortOrder.Ascending): DataFrame	
+assign	arraymancer_backend.html#assign,DataFrame,string,int,Column,int	arraymancer_backend: assign(df: var DataFrame; key: string; idx1: int; c2: Column; idx2: int)	
+innerJoin	arraymancer_backend.html#innerJoin,DataFrame,DataFrame,string	arraymancer_backend: innerJoin(df1, df2: DataFrame; by: string): DataFrame	
+toHashSet	arraymancer_backend.html#toHashSet,Tensor[T]	arraymancer_backend: toHashSet[T](t: Tensor[T]): HashSet[T]	
+group_by	arraymancer_backend.html#group_by,DataFrame,varargs[string]	arraymancer_backend: group_by(df: DataFrame; by: varargs[string]; add = false): DataFrame	
+summarize	arraymancer_backend.html#summarize,DataFrame,varargs[FormulaNode]	arraymancer_backend: summarize(df: DataFrame; fns: varargs[FormulaNode]): DataFrame	
+count	arraymancer_backend.html#count,DataFrame,string,string	arraymancer_backend: count(df: DataFrame; col: string; name = &quot;n&quot;): DataFrame	
+setDiff	arraymancer_backend.html#setDiff,DataFrame,DataFrame	arraymancer_backend: setDiff(df1, df2: DataFrame; symmetric = false): DataFrame	
+head	arraymancer_backend.html#head,DataFrame,int	arraymancer_backend: head(df: DataFrame; num: int): DataFrame	
+tail	arraymancer_backend.html#tail,DataFrame,int	arraymancer_backend: tail(df: DataFrame; num: int): DataFrame	
+gather	arraymancer_backend.html#gather,DataFrame,varargs[string],string,string	arraymancer_backend: gather(df: DataFrame; cols: varargs[string]; key = &quot;key&quot;; value = &quot;value&quot;;\n       dropNulls = false): DataFrame	
+unique	arraymancer_backend.html#unique,Column	arraymancer_backend: unique(c: Column): Column	
+unique	arraymancer_backend.html#unique,DataFrame,varargs[string]	arraymancer_backend: unique(df: DataFrame; cols: varargs[string]): DataFrame	
+drop_null	arraymancer_backend.html#drop_null,DataFrame,varargs[string],bool	arraymancer_backend: drop_null(df: DataFrame; cols: varargs[string]; convertColumnKind = false;\n          failIfConversionFails: bool = false): DataFrame	
+evaluate	arraymancer_backend.html#evaluate,FormulaNode	arraymancer_backend: evaluate(node: FormulaNode): Value	
+evaluate	arraymancer_backend.html#evaluate,FormulaNode,DataFrame	arraymancer_backend: evaluate(node: FormulaNode; df: DataFrame): Column	
+reduce	arraymancer_backend.html#reduce,FormulaNode,DataFrame	arraymancer_backend: reduce(node: FormulaNode; df: DataFrame): Value	
